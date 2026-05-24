@@ -36,3 +36,33 @@ Versicolor and Virginica, especially in petal size.
 but struggles with very cheap and very expensive properties. 
 Linear Regression is a good starting point but more advanced 
 models like Random Forest would improve accuracy.
+## Task 3 - Heart Disease Prediction
+
+**Objective:** Build a Machine Learning classification model 
+to predict whether a patient has heart disease
+
+**Dataset:** Heart Disease UCI Dataset (303 patients, 14 columns)
+
+**What I did:**
+- Loaded and inspected real medical patient data
+- Checked for missing values (none found)
+- Explored data using count plot and box plot
+- Split data 80% training / 20% testing
+- Trained a Decision Tree Classifier model
+- Evaluated model with accuracy, confusion matrix and 
+  classification report
+- Visualized feature importance
+
+**Results:**
+- Accuracy: 75.41%
+- Precision (Has Disease): 84%
+- Recall (Has Disease): 66%
+- Most Important Feature: Chest Pain Type (cp)
+
+**Key Findings:** 
+- Younger patients surprisingly show more heart disease risk
+- Chest pain type is the strongest predictor of heart disease
+- Model missed 11 sick patients (False Negatives) which 
+  highlights the importance of Recall in medical ML
+- Dataset was balanced (165 vs 138 patients) which gave 
+  honest accuracy results
